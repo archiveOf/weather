@@ -3,7 +3,7 @@ function hideElement(elem) {
 }
 
 function showElement(elem) {
-    elem.style.display = 'block'
+    elem.style.display = 'flex'
 }
 
 function textContent(root, selector, value) {

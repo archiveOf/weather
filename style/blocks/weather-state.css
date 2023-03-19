@@ -13,7 +13,7 @@
 }
 
 .weather-state {
-    display: flex;
+    display: none;
     flex: 1;
     flex-direction: column;
 }
@@ -22,6 +22,10 @@
 }
 
 /* CURRENT STATE */
+
+.weather-state.current {
+    display: flex;
+}
 
 .current-temp {
     font-size: 70px;
