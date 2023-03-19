@@ -1,0 +1,28 @@
+/* WEATHER LOCATIONS */
+.weather-locations__header {
+    border-bottom: 1px solid #000;
+    padding: 35px 0 5px 15px;
+}
+.weather-locations__title {
+    font-size: 24px;
+    font-weight: 400;
+}
+.weather-locations__content {
+    padding: 35px 0 50px 1px;
+}
+.weather-locations__item {
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.weather-locations__item-remove-btn {
+    display: none;
+}
+.weather-locations__item:hover {
+    background-color: rgb(237, 237, 237);
+    cursor: pointer;
+}
+.weather-locations__item:hover .weather-locations__item-remove-btn {
+    display: inline;
+}

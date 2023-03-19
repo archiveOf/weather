@@ -1,0 +1,148 @@
+.weather-state__wrapper {
+    /* position: relative; */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.weather-state__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.weather-state {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.weather-state.current {
+    justify-content: space-between;
+}
+
+/* CURRENT STATE */
+
+.current-temp {
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+.current-temp-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.current-icon {
+    width: 78px;
+    height: 59px;
+}
+
+.current-city {
+    font-size: 24px;
+}
+
+.current-city-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.current-fav-btn {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.current-fav-icon {
+    width: 22px;
+    height: 22px;
+}
+
+
+
+
+.weather-state__title {
+    margin-top: 20px;
+}
+
+
+/* DETAILS STATE */
+.details {
+
+}
+.details__city-title {
+    margin-bottom: 40px;
+}
+
+.details-temp-conditions-item {
+    margin-bottom: 10px;
+}
+
+
+
+/* FORECAST STATE */
+.forecast {
+    /* max-height: 356.333px; */
+    /* overflow-y: scroll; */
+}
+.forecast__city-title {
+    margin-bottom: 5px;
+}
+
+.forecast-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-bottom: 40px;
+}
+
+.forecast-list-item {
+    border: 1px solid #000;
+    font-size: 18px;
+    padding: 10px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+.forecast-date {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.forecast-temp__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forecast-temp-state {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* STATE TABS */
+.weather-state__tabs {
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; */
+    font-size: 18px;
+    display: flex;
+    /* margin-bottom: -1px; */
+}
+
+.weather-state__tab {
+    border: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    width: 33.333%;
+    padding: 10px 0;
+}
+
+.weather-state__tab:hover {
+    cursor: pointer;
+}
+
+.weather-state__tab.active {
+    background-color: #000;
+    color: #fff;
+}

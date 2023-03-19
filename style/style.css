@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import 'blocks/header.css';
+@import 'blocks/weather-state.css';
+@import 'blocks/weather-locations.css';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.divider {
+    background-color: #000;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#weather-app {
+    width: 600px;
+}
+
+.container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.weather-info {
+    display: grid;
+    grid-template-columns: 1fr .5px 1fr;
+    border: 1px solid #000;
+    margin-top: -1px;
+}
+
+
+
+
+
+
+
+
+
+
+

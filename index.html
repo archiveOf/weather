@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="weather-app">
+        <div class="container">
+            <header class="header-search">
+                <form id="search-form" class="search-form">
+                    <input type="text" class="search-input-field" placeholder="Type your city">
+                    <button type="submit" class="search-button"><span class="search-icon"></span></button>
+                </form>
+            </header>
+
+            <div class="main-content">
+                <div class="weather-info">
+                    <div class="weather-state__container">
+                        <div class="weather-state__wrapper">
+                            <div class="weather-state current" data-state="now">
+                                <div class="current-temp temp">14<span>&#176;</span></div>
+                                <div class="current-temp-icon"><img src="images/cloud-icon.svg" alt="Cloud icon" class="current-icon"></div>
+                                <div class="current-city-section">
+                                    <span class="current-city city-title">Aktobe</span>
+                                    <button id="fav-city" class="current-fav-btn"><i class="fa fa-heart-o fa-2x"></i></button>
+                                </div>
+                            </div>
+                            <div class="weather-state details" data-state="details">
+                                <div class="details__city-title weather-state__title city-title">Aktobe</div>
+                                <ul class="details-temp-conditions">
+                                    <li class="details-temp-conditions-item details-temp">Temperature: 14<span>&#176;</span></li>
+                                    <li class="details-temp-conditions-item temp-feels-like">Feels like: 10<span>&#176;</span></li>
+                                    <li class="details-temp-conditions-item weather-desc">Weather: Clouds</li>
+                                    <li class="details-temp-conditions-item temp-sunrise">Sunrise: 03:21</li>
+                                    <li class="details-temp-conditions-item temp-sunset">Sunset: 18:54</li>
+                                </ul>
+                            </div>
+                            <div class="weather-state forecast" data-state="forecast">
+                                <div class="forecast__city-title weather-state__title city-title">Aktobe</div>
+                                <ul class="forecast-list">
+                                    <li class="forecast-list-item">
+                                        <div class="forecast-date">
+                                            <span class="forecast-day">17 May</span>
+                                            <span class="forecast-current-time">12:00</span>
+                                        </div>
+                                        <div class="forecast-temp__container">
+                                            <ul class="forecast-temp-conditions">
+                                                <li class="forecast-temp-condition forecast-temp">Temperature: 13</li>
+                                                <li class="forecast-temp-condition temp-feels-like">Feels like: 10</li>
+                                            </ul>
+                                            <div class="forecast-temp-state">
+                                                <span class="forecast-temp-state-title weather-desc">Rain</span>
+                                                <img src="images/raincloud-icon.svg" alt="" class="forecast-temp-state-icon">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="forecast-list-item">
+                                        <div class="forecast-date">
+                                            <span class="forecast-day">17 May</span>
+                                            <span class="forecast-current-time">12:00</span>
+                                        </div>
+                                        <div class="forecast-temp__container">
+                                            <ul class="forecast-temp-conditions">
+                                                <li class="forecast-temp-condition forecast-temp">Temperature: 13</li>
+                                                <li class="forecast-temp-condition temp-feels-like">Feels like: 10</li>
+                                            </ul>
+                                            <div class="forecast-temp-state">
+                                                <span class="forecast-temp-state-title weather-desc">Rain</span>
+                                                <img src="images/raincloud-icon.svg" alt="" class="forecast-temp-state-icon">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="forecast-list-item">
+                                        <div class="forecast-date">
+                                            <span class="forecast-day">17 May</span>
+                                            <span class="forecast-current-time">12:00</span>
+                                        </div>
+                                        <div class="forecast-temp__container">
+                                            <ul class="forecast-temp-conditions">
+                                                <li class="forecast-temp-condition forecast-temp">Temperature: 13</li>
+                                                <li class="forecast-temp-condition temp-feels-like">Feels like: 10</li>
+                                            </ul>
+                                            <div class="forecast-temp-state">
+                                                <span class="forecast-temp-state-title weather-desc">Rain</span>
+                                                <img src="images/raincloud-icon.svg" alt="" class="forecast-temp-state-icon">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <ul class="weather-state__tabs">
+                            <li class="weather-state__tab active">Now</li>
+                            <li class="weather-state__tab">Details</li>
+                            <li class="weather-state__tab">Forecast</li>
+                        </ul>
+
+                    </div> <!-- WEATHER_STATE -->
+
+                    <div class="divider"></div>
+
+                    <div class="weather-locations">
+                        <header class="weather-locations__header">
+                            <h2 class="weather-locations__title">Added Locations:</h2>
+                        </header>
+                        <section class="weather-locations__content">
+                            <ul class="weather-locations__list">
+                                <li class="weather-locations__item"><span class="weather-locations__item-text">Amur Oblast</span><i class="weather-locations__item-remove-btn fa fa-remove"></i></li>
+                                <li class="weather-locations__item"><span class="weather-locations__item-text">Samara Oblast</span><i class="weather-locations__item-remove-btn fa fa-remove"></i></li>
+                                <li class="weather-locations__item"><span class="weather-locations__item-text">Bali</span><i class="weather-locations__item-remove-btn fa fa-remove"></i></li>
+                                <li class="weather-locations__item"><span class="weather-locations__item-text">Dane</span><i class="weather-locations__item-remove-btn fa fa-remove"></i></li>
+                                <li class="weather-locations__item"><span class="weather-locations__item-text">Kilo</span><i class="weather-locations__item-remove-btn fa fa-remove"></i></li>
+                                <li class="weather-locations__item"><span class="weather-locations__item-text">Nur-Sultan</span><i class="weather-locations__item-remove-btn fa fa-remove"></i></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div> <!-- WEATHER_INFO -->
+
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
