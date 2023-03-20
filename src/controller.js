@@ -24,6 +24,8 @@ export default class Controller {
     }
 
     handleDeleteCity(currentCity) {
+        let icon = this.view.favBtn.querySelector('i');
+        icon.className = 'fa fa-heart-o fa-2x';
         this.store.deleteItem(currentCity);
     }
 
